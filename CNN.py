@@ -5,6 +5,7 @@
 @version: Python3.7
 @author: Huihui Xu
 @email: huihui.xu@pitt.edu
+@date: 10/28/2021
 """
 
 
@@ -18,14 +19,18 @@ class CNN(nn.Module):
 		"""
 		Parameters
 		vocab: vocabulary size
+
 		embed_dim: embedding dimensionality 
+
 		n_filters: number of filters(for each size of filter)
+
 		filter_sizes: different sizes of filters(eg: 2, 3, 4)
+
 		output_dim: if classification, then it's number of labels
+
 		dropout: dropout to prevent overfitting
 
 		"""
-
 
 		# embedding layer
 		self.embedding = nn.Embedding(vocab, embed_dim)

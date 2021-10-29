@@ -3,6 +3,7 @@
 @version: Python 3.7
 @author: Huihui Xu
 @email: huihui.xu@pitt.edu
+@date: 10/28/2021
 """
 import numpy as np
 
@@ -71,7 +72,7 @@ def M_step(posters, data, ps, us, sigmas):
 		posters_ = posters[:,i].reshape(-1,1)
 		new_sigma = np.sum(np.multiply(np.square(data - new_u),posters_))/np.sum(posters_, axis = 0)
 		new_sigmas.append(new_sigma.item())
-	
+	new_sigmas = [np.sqrt(_) for _ in new_sigmas]
 	return new_ps,new_us,new_sigmas  
 
 if __name__ == "__main__":
