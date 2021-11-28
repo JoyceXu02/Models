@@ -79,7 +79,7 @@ if __name__ == "__main__":
 	us = [-3,2]
 	sigmas = [2,2]
 	ps = [0.5,0.5]
-	data = [0.2, -0.9, -1, 1.2, 1.8]
+	data = [-1, 0, 4, 5, 6]
 	points_posters = E_step(data, ps, us, sigmas)
 	new_ps, new_us, new_sigmas = M_step(points_posters, data, ps, us, sigmas)
 
