@@ -99,10 +99,6 @@ def transation_probs(vec):
 	return stay_probs, left_probs, right_probs
 
 
-
-
-
-
 if __name__ == "__main__":
 	# initial value functions of states
 	v0 = np.array([0, 0, 0, 0, 0])
