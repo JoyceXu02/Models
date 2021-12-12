@@ -10,5 +10,5 @@
 
 ## Reinforcment Learning
 1. Value Iteration
-
+2. Q value Iteration
 
