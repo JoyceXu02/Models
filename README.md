@@ -7,6 +7,7 @@
 1. EM aglorithms
 2. KMeans
 3. KMedods
+4. Newton method
 
 ## Reinforcment Learning
 1. Value Iteration
